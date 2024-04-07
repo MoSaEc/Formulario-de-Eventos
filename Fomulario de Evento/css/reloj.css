@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Nixie One';
+    src: url('NixieOne.ttf'); 
+}
+
+body {
+    overflow: hidden; 
+    background-color: #000; 
+}
+
+.contenedor-relojes {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor-reloj {
+    position: relative;
+    display: flex; 
+    align-items: center;
+    gap: 20px; 
+}
+
+.reloj-analogico {
+    width: 200px;
+    height: 200px;
+    border: 6px solid #ff33cc; 
+    border-radius: 50%;
+    position: relative;
+}
+
+.manecilla {
+    position: absolute;
+    background-color: rgb(255, 255, 255); 
+    transform-origin: center bottom; 
+    left: 50%;
+    bottom: 50%; 
+}
+
+.manecilla-hora {
+    width: 6px;
+    height: 30%; 
+    transform: translateX(-50%) rotate(90deg);
+}
+
+.manecilla-minuto {
+    width: 4px;
+    height: 40%; 
+    transform: translateX(-50%) rotate(90deg);
+}
+
+.manecilla-segundo {
+    width: 2px;
+    height: 45%; 
+    transform: translateX(-50%) rotate(90deg);
+}
+
+.reloj-digital {
+    font-family: 'Nixie One'; 
+    font-size: 36px;
+    color: #f06; 
+    background-color: #000; 
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px solid #f06; 
+    box-shadow: 0 0 20px #f06; 
+}

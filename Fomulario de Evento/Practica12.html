@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Miau Formulario</title>
+        <link rel="stylesheet" type="text/css" href="css/estilos copy.css">
+    </head>
+
+
+    <body>
+        <div id="head"></div>
+
+        <div id="slider">
+            <h1>Conferencia Anual sobre programacion en Gaming </h1>
+            <h3>Incribete Ahora para recibir las nuevas actualizaciones y tecnologias</h3>
+            <p>Iniciamos el 1ro de OCtubre</p>
+            <ul class="slider">
+                <li><img src="images/r1.jpg"  width=" 500px" height="300px" alt="Imagen 1"></li>
+                <li><img src="images/f1.jpg"  width=" 500px" height="300px" alt="Imagen 2"></li>
+                <li><img src="Images/ff1.jpg" width=" 500px" height="300px" alt="Imagen 3"></li>
+            </ul>
+        </div>
+
+        <div id="form-container">
+            <form action="">
+                <p><label for="Nombre" class="label">Nombre Completo:</label></p>
+                <input type="text" id="Nombre" class="field" placeholder="Monika Mendez" required> <br/>
+
+                <p><label for="email" class="label">Correo Electronico:</label></p>
+                <input type="email" id="email" class="field" placeholder="cat@example.com" required> <br/>
+
+                <p><label for="Telefono" class="label">Numero Telefonico:</label></p>
+                <input type="tel" id="Telefono" class="field" placeholder="55 XXXXXXXXXX" required> <br/>
+
+                <p><label for="entrada" class="label">Tipo de Entrada </label></p>
+                <select id="en" class="field">
+                        <option value="General">General</option>
+                        <option value="V.I.P">V.I.P</option>
+                        <option value="Platinum">Platinum</option>
+                    </select> <br/>
+
+                <h1 class="center-content">
+                    <input type="submit" id="submit-button" class="btn btn-green" value="Enviar">
+                </h1>
+            </form>
+        </div>
+
+        <div id="Resultados"></div>
+
+        <div id="event-details"></div>
+        
+        <script src="js/slider.js"></script>
+        
+    </body>
+</html>
